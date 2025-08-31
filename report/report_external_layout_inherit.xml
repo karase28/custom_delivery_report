@@ -1,9 +1,9 @@
 <odoo>
   <template id="report_external_layout_inherit" inherit_id="web.external_layout">
       <!-- Wstawiamy pod blokiem adresu firmy -->
-        <xpath expr="//t[@t-call='web.external_layout']" position="inside">
-            <div class="row mt-2">
-                <div class="col-6">
+        <xpath expr="//div[contains(@class,'company_address')]" position="after">
+          <div class="row mt-1">
+              <div class="col-12">
                     <strong>Oddział produkcyjny:</strong><br/>
                     <span>Omega Inox Sp. z o.o.</span><br/>
                     <span>ul. Partyzantów 19a</span><br/>
