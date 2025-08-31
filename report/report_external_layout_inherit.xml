@@ -6,11 +6,11 @@
           <div name="production_address" class="w-50 text-end">
               <ul class="list-unstyled">
                   <li>
-                      <strong>Production Address:</strong><br/>
-                      <span>Twoja Firma Sp. z o.o.</span><br/>
-                      <span>ul. Przemysłowa 12</span><br/>
-                      <span>00-123 Warszawa</span><br/>
-                      <span>Polska</span>
+                    <strong>Oddział produkcyjny:</strong><br/>
+                    <span>Omega Inox Sp. z o.o.</span><br/>
+                    <span>ul. Partyzantów 19a</span><br/>
+                    <span>39-300 Mielec</span><br/>
+                    <span>Polska</span><br/>
                   </li>
               </ul>
           </div>
@@ -18,3 +18,4 @@
 
   </template>
 </odoo>
+
