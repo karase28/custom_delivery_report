@@ -1,16 +1,15 @@
 <odoo>
-  <template id="report_external_layout_inherit" inherit_id="web.external_layout">
-      <!-- Wstawiamy pod blokiem adresu firmy -->
-        <xpath expr="//div[contains(@class,'company_address')]" position="after">
-          <div class="row mt-1">
-              <div class="col-12">
-                    <strong>Oddział produkcyjny:</strong><br/>
-                    <span>Omega Inox Sp. z o.o.</span><br/>
-                    <span>ul. Partyzantów 19a</span><br/>
-                    <span>39-300 Mielec</span><br/>
-                    <span>Polska</span><br/>
-                </div>
-            </div>
+  <template id="report_external_layout_inherit" inherit_id="web.external_layout_folder">
+      
+      <!-- Dodajemy adres produkcji pod istniejącym adresem firmy -->
+      <xpath expr="//div[@name='company_address']/ul" position="inside">
+            <li>
+                <strong>Oddział produkcyjny:</strong><br/>
+                <span>Omega Inox Sp. z o.o.</span><br/>
+                <span>ul. Partyzantów 19a</span><br/>
+                <span>39-300 Mielec</span><br/>
+                <span>Polska</span><br/>
+            </li>
         </xpath>
   </template>
 </odoo>
