@@ -8,6 +8,7 @@
     'depends': ['stock', 'sale'],
     'data': [
         'report/report_delivery_document_inherit.xml',
+        'report/report_external_layout_inherit.xml',
     ],
     'installable': True,
     'application': False,

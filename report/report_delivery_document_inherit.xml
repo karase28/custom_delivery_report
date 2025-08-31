@@ -1,27 +1,13 @@
 <odoo>
     <template id="report_delivery_document_inherit" inherit_id="stock.report_delivery_document">
 
-        <!-- Adres filii produkcyjnej obok adresu firmy -->
-        <xpath expr="//t[@t-call='web.external_layout']" position="inside">
-            <div class="row mt-2">
-                <div class="col-6">
-                    <strong>Oddział produkcyjny:</strong><br/>
-                    <span>Omega Inox Sp. z o.o.</span><br/>
-                    <span>ul. Partyzantów 19a</span><br/>
-                    <span>39-300 Mielec</span><br/>
-                    <span>Polska</span><br/>
-                </div>
-            </div>
-        </xpath>
-
         <!-- Numer projektu klienta obok Shipping Date -->
         <xpath expr="//div[@name='div_sched_date']" position="after">
             <div class="col col-3 mw-100 mb-2" name="div_client_project_number"
                  t-if="o.sale_id and o.sale_id.client_project_number">
-                <strong>Client Project</strong>
+                <strong>Nr projektu klienta</strong>
                 <div class="m-0" t-field="o.sale_id.client_project_number"/>
             </div>
         </xpath>
-
     </template>
 </odoo>
