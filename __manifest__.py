@@ -1,13 +1,15 @@
+# -*- coding: utf-8 -*-
 {
-    'name': 'WZ - Adres Produkcji',
-    'license': 'LGPL-3',
-    'version': '18.0.1',
-    'summary': 'Dodaje adres produkcji do raportu WZ',
-    'author': 'Jarosław Kopacz',
-    'depends': ['stock'],
+    'name': "Custom Delivery Report",
+    'version': '1.0',
+    'author': "Jarosław Kopacz",
+    'category': 'Inventory',
+    'summary': "Rozszerzenie raportu dostawy o adres filii produkcyjnej i numer projektu klienta",
+    'depends': ['stock', 'sale'],
     'data': [
-        'views/raport_wz_dziedziczacy_po_oryg.xml',
+        'report/report_delivery_document_inherit.xml',
     ],
     'installable': True,
     'application': False,
+    'license': 'LGPL-3',
 }
