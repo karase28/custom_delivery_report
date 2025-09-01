@@ -10,5 +10,19 @@
             </div>
         </xpath>
 
+        <!-- Dwa miejsca na podpisy na dole dokumentu -->
+        <xpath expr="//div[@class='page']" position="inside">
+            <div class="row mt64">
+                <div class="col-6 text-center">
+                    <strong>Podpis wystawiającego</strong>
+                    <div style="border-top: 1px solid #000; margin-top: 60px;"/>
+                </div>
+                <div class="col-6 text-center">
+                    <strong>Podpis odbierającego</strong>
+                    <div style="border-top: 1px solid #000; margin-top: 60px;"/>
+                </div>
+            </div>
+        </xpath>
+
     </template>
 </odoo>
