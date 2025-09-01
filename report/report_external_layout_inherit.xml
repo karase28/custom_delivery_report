@@ -1,16 +1,16 @@
 <odoo>
   <template id="report_external_layout_inherit" inherit_id="web.external_layout_folder">
       
-      <!-- Dodajemy trzecią kolumnę obok adresu firmy -->
+      <!-- Dodajemy nową kolumnę obok adresu firmy -->
       <xpath expr="//div[@class='o_folder_company_info d-flex justify-content-between']" position="inside">
           <div name="production_address" class="w-50 text-end">
               <ul class="list-unstyled">
                   <li>
-                    <strong>Oddział produkcyjny:</strong><br/>
-                    <span>Omega Inox Sp. z o.o.</span><br/>
-                    <span>ul. Partyzantów 19a</span><br/>
-                    <span>39-300 Mielec</span><br/>
-                    <span>Polska</span><br/>
+                      <strong>Oddział produkcyjny:</strong><br/>
+                      <span>Omega Inox Sp. z o.o.</span><br/>
+                      <span>ul. Partyzantów 19a</span><br/>
+                      <span>39-300 Mielec</span><br/>
+                      <span>Polska</span>
                   </li>
               </ul>
           </div>
@@ -18,4 +18,3 @@
 
   </template>
 </odoo>
-
