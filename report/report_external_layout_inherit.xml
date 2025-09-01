@@ -3,7 +3,7 @@
       
       <!-- Dodajemy nową kolumnę obok adresu firmy -->
       <xpath expr="//div[@class='o_folder_company_info d-flex justify-content-between']" position="inside">
-          <div name="production_address" class="w-50 text-end">
+          <div name="production_address" class="w-30 text-end">
               <ul class="list-unstyled">
                   <li>
                       <strong>Oddział produkcyjny:</strong><br/>
